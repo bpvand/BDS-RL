@@ -39,7 +39,7 @@ dfZozo_10 <- read.csv('zozo_noContext_10items.csv')%>%
   select(item_id, click)
 
 # reads in full csv of Yahoo dataset
-dfYahoo <- read.csv('../../data/clean/yahoo_data/yahoo_day1_10arms.csv')[,-c(1,2)]
+dfYahoo <- read.csv('yahoo_day1_10arms.csv')[,-c(1,2)]
 
 # selects the two relevant columns from Yahoo dataset; arm shown to user and reward observed
 dfYahoo_for_sim <- dfYahoo %>% select(arm, reward)
@@ -215,7 +215,7 @@ As stated at the start, we only have 10 arms for the ZOZO data. However, there a
 ```{r}
 
 # this version contains 20, 40 arms
-dfZozo_40 <- read.csv('../../data/clean/zozo_data/zozo_noContext_20items.csv')%>% 
+dfZozo_40 <- read.csv('zozo_noContext_20items.csv')%>% 
   select(item_id, click)
 
 
